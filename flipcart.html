@@ -13,7 +13,7 @@ body{overflow-y:hidden;
 body{
      
 	 background-repeat:no-repeat;
-    
+     background-image: url("img_tree.gif"), url("paper.gif");
 	
 	 font-family: Arial, Helvetica, sans-serif;
 	}
@@ -283,7 +283,7 @@ span{
 
 <div>
 <div>
-<p class="amazon" ><a class="amazon" style=" text-decoration:none;" href="https://www.amazon.com/"> Amazon</a></p>
+<p class="amazon" ><a class="amazon" style=" text-decoration:none;" href="https://www.flipkart.com/"> Flipcart</a></p>
 <a style="text-decoration:none; font-family:Courier New; color:black; "></a>
 </div><br>
 
@@ -295,16 +295,16 @@ span{
 <input type="text" id="datepicker" value="11/12/2018"><br><p class="checktext">Check Availability</p><br>
 <button class="checkbutton">Check</button>
 <div class="content">
-Username	&nbsp;&nbsp;	 :Amazon <br>
-About&nbsp;	:Amazon.com, Inc., doing business as Amazon,is an American electronic commerce and cloud computing company that was founded on July 5, 1994, by Jeff Bezos and is based in Seattle, Washington.
-It is the largest Internet-based retailer in the world by total sales and market capitalization.
+Username	&nbsp;&nbsp;	 :Flipcart <br>
+About&nbsp;&nbsp;:Flipkart Pvt Ltd. is an Indian electronic commerce company based in Bengaluru,India. Founded by Sachin Bansal and Binny Bansal in 2007.
+the company initially focused on book sales, before expanding into other product categories such as consumer electronics, fashion, and lifestyle products
 </div>
 </div>
 </div>
 
 
 <div class="footer">
-  <p id="mouse" style="color:white;" onclick="pageRedirect()">About</p>
+  <p id="mouse" style="color:white;" onclick="myFunction()">About</a></p>
 </div>
 <div class="model">
 <p class="thought">"The secret to success is to treat all customers as if your world revolves around them. " </p>
@@ -317,11 +317,10 @@ It is the largest Internet-based retailer in the world by total sales and market
   $(document).ready(function() {
     $("#datepicker").datepicker();
   });
- </script>
- <script>
-function pageRedirect() {
-    window.location.href="file:///C:/Users/simran/Desktop/delivery/delivery/decut/templates/aboutpage.html";
+ 
+function myFunction() {
+    location.href="file:///C:/Users/simran/Desktop/delivery/delivery/decut/templates/aboutpage.html";
 
-	}
+	}/
 	</script>
 </html>
