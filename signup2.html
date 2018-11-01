@@ -14,6 +14,7 @@ body {
 .navigation1
         {
 		 background-color: #010103;
+		 opacity:0.7;
 		}
 .navigation1 a
         {
@@ -40,8 +41,8 @@ body
 /* Add a background color when the inputs get focus */
 input[type=text], input[type=password]{
          opacity:0.5;
-		 width: 72%;
-		 padding: 11px 15px;
+		 width: 70%;
+		 padding: 13px 15px;
 		 margin: 9px 0;
 		 display: inline-block;
 		 border: 1px solid #ccc;
@@ -53,11 +54,11 @@ button {
     background-color: #4CAF50;
     color: white;
     padding: 10px;
-    margin: 4px 0;
+    margin: 33px 0;
 	margin-right: 10px;
     border: none;
     cursor: pointer;
-    width: 73%;
+    width: 70%;
     opacity: 0.9;
 }
 
@@ -70,13 +71,13 @@ button:hover {
         margin-bottom:30%;
         text-align: left;
 	    font-color: white;
-		padding: 1px;
+		padding: -20px;
 		display:block;
-		margin-left: 19%;
+		margin-left: 14%;
 	
 }
 p.firstext{
-         font-size: 25px;
+         font-size: 22px;
 		 }
 
 
@@ -88,8 +89,8 @@ p.firstext{
 		z-index:1; /* Sit on top */
 		left: 70px;
 		top: 65px;
-		width: 47%; /* Full width */
-		height: 600px; /* Full height */
+		width: 42%; /* Full width */
+		height: 570px; /* Full height */
 		background-color: rgb(23, 22, 43); /* Fallback color */
 		background-color: rgba(0, 0, 4, 0.7); /* Black w/ opacity */
 		padding-top: 30px;
@@ -110,7 +111,7 @@ margin-top:3%;
 		   }
 .firstext{
           margin-top:10px;
-		  }   
+		  color: #4CAF50; font-size:2px;}   
 
 
 /* Style the horizontal ruler */
@@ -137,7 +138,7 @@ hr {
 	 text-align: left;
         }
 .remember{
-        margin-top:10px;
+        margin-top:11px;
 		}
 
 @media screen and (max-width: 600px) {
@@ -150,29 +151,200 @@ hr {
      margin-top:5px;
      }
 #details{
-      height : 100px;
-	  opacity:0.5;
-		 width: 72%;
+	     height : 190px;
+		 opacity:0.5;
 		 padding: 11px 15px;
+		 width:70%;
 		 margin: 9px 0;
 		 display: inline-block;
 		 border: 1px solid #ccc;
 		 box-sizing: border-box;
 }
-       
+
+/*bootstrap....... */	
+ @media screen and (max-width: 1300px) {
+
+ 
+ 
+ 
+ html{overflow-y:hidden;}
+body {
+     background-image: url("img/wall.jpg");
+	 background-position: fixed;
+	 background-repeat:no-repeat;
+	 background-size:cover;
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	  }
+.navigation1
+        {
+		 background-color: #010103;
+		 opacity:0.7;
+		 width:30%;
+		}
+.navigation1 a
+        { 
+		 float: left;
+		 color: white ;
+		 text-align: center;
+		 padding: 20px 14px;
+		 text-decoration: none;
+		 font-size: 17px;
+		 }
+.navigation1 a:hover
+		 {
+		 background-color: grey;
+		 opacity: 0.5;
+		
+		 }
+		 
+body 
+    {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+
+/* Add a background color when the inputs get focus */
+input[type=text], input[type=password]{
+         opacity:0.5;
+		 width: 72%;
+		 padding: 5px 13px;
+		 margin: 2px 0;
+		 display: inline-block;
+		 border: 1px solid #ccc;
+		 box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    margin: 38px 0;
+	margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    width: 73%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:0.5;
+}
+
+/* Add padding to container elements */
+.container {
+        margin-bottom:30%;
+        text-align: left;
+	    font-color: white;
+		padding: -8px;
+		display:block;
+		margin-left: -33px;
+	
+}
+p.firstext{
+         font-size: 16px;
+		 }
+
+
+/* The Modal (background) */
+.modal {
+		font-color:white;
+			
+		position: relative; /* Stay in place */
+		z-index:1; /* Sit on top */
+		left: 70px;
+		top: 49px;
+		width: 47%; /* Full width */
+		height: 600px; /* Full height */
+		background-color: rgb(23, 22, 43); /* Fallback color */
+		background-color: rgba(0, 0, 4, 0.7); /* Black w/ opacity */
+		padding-top: 20px;
+		margin-bottom:10%;
+		margin-right:130px;
+		}
+
+/* Modal Content/Box */
+.modal-content {
+	       right:130%;
+		   margin-top:2%;
+		   margin-bottom: 30%;
+		   background-color: #fefefe;
+		   display: inline-block;
+		   border: 1px solid #888;
+           width: 56%;
+		   height:0.1%;
+		   }
+.firstext{
+          margin-top:10px;
+		 
+		  }   
+
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 50%;
+    }
+}
+.remember1{
+     font-color: white;
+	 text-align: left;
+	 font-size:13px;
+      color:white;  
+	  }
+.remember{
+        margin-top:8px;
+		}
+
+@media screen and (max-width: 600px) {
+    .col-25,input[type=submit] {
+        height: 80%;
+        padding: 11px 15px;
+    }
+}
+.text{
+     top:70%;
+     
+	 }
+#details{
+      height : 50px;
+	  opacity:0.5;
+		 width: 72%;
+		 
+		 padding: 8px 6px;
+		 margin: 3px 0;
+		 display: inline-block;
+		 border: 1px solid #ccc;
+		 box-sizing: border-box;
+}
+}
 </style>
 </head>
 <body>
-<div class="navigation1" style="background-color:black;">
+<div class="navigation1" >
  <a href="#">Home</a>
- <a href="#">About</a>
+ <a href="file:///C:/Users/simran/Desktop/delivery/delivery/decut/templates/aboutpage.html">About</a>
  </div>
 <center>
 <div id="id01" class="modal">
   
   <form class="modal-content" action="/action_page.php">
     <div class="container">
-      <p class="firstext"style="color: #4CAF50;" >Welcome to Signup page</p>
+      <p class="firstext" >Welcome to Signup page</p>
       <label  for="email"><b class="remember1"style="color : white;" >Username</b></label><br>
       <input  type="text" placeholder="Enter Email" name="email" required><br>
 
@@ -182,13 +354,11 @@ hr {
       <label  for="psw"><b class="remember1" style="color : white;" >Password</b></label><br>
       <input type="password" placeholder="Enter your Password" name="psw" required><br>
       <div class="col-25">
-	  <label  for="Details"><b class="remember1 " style="color : white;" >Details</b></label><br>
-      <textarea id="details" name="details" placeholder="Enter your details" style="height:80px;font-family: Arial, Helvetica, sans-serif;font-size:12.5"></textarea>
+	  <label  for="Details"><b class="remember1" style="margin-left:2px;color:white;" >Details</b></label><br>
+      <textarea id="details" name="details" placeholder="Enter your details" style="height:50px;margin-top:2px;font-family: Arial, Helvetica, sans-serif;font-size:12.5;"></textarea>
       </div>
-	  <label class="remember1 remember"style="color : white;">
-        <input  type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;" > Remember me </label>
-
-      <p class="remember1 text"style="color : white;">By creating an account you agree to our <a href="#" style="color:dodgerblue;">Terms & Privacy</a>.</p>
+	  <label class="remember1 remember"style="color : white; margin-bottom:3px;">
+        <input  type="checkbox" checked="checked" name="remember" style="margin-bottom:5px;" > Remember me </label>
 
       <div class="clearfix">
 	  <button type="submit" class="signupbtn button">Sign Up</button>

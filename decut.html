@@ -9,7 +9,7 @@
 <div class="navigation">
 
  <a href="#">Home</a>
- <a href="#">About</a>
+ <a href="file:///C:/Users/simran/Desktop/delivery/delivery/decut/templates/aboutpage.html">About</a>
  <a  class="sl"  href="signup2.html">Signup</a>
  <button onclick="document.getElementById('login').style.display='block'" style="width:auto;">Login</button>
  </div>
@@ -20,15 +20,15 @@
 	 <div class="imgcontainer">
 	 <p class="firstext"style="color: #4CAF50;" >Welcome to Login page</p>
 		  <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
-		  <img src="images/user.jpg" alt="Avatar" class="avatar" height="45px">
+		
      </div>
 	
 	<div class="label">
 	   
 	   <label for="uname"><b class="remember">Username</b></label>
 	   <input type="text" placeholder="Enter your username" name="uname" required>
-	   <label for="psw"><b class="remember">Password</b></label>
-	   <input type="password" placeholder="Enter password" name="psw"required>
+	   <label for="psw"><b class="remember" >Password</b></label>
+	   <input type="password" placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="psw"required>
 	   <label class="remember">
 	   <input type="checkbox" checked="checked" name="remember">Remember me
 	   </label>
