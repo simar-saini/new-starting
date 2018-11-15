@@ -340,9 +340,9 @@ hr {
 <body>
 <container>
 <div class="navigation1" >
- <a href="#">Home</a>
- <a href="file:///C:/Users/simran/Desktop/delivery/delivery/decut/templates/aboutpage.html">About</a>
- <button  style="width:auto;">Login</button>
+ <a href="#" style="background-color:green;border-radius:4px;padding:20px;">Home</a>
+ <a href="file:///C:/Users/simran/Desktop/delivery/delivery/decut/templates/aboutpage.html" style="background-color:green;margin-left:2px;border-radius:4px;padding:20px;">About</a>
+ <button   onclick="pageRedirect()" style="width:auto; margin-left: 81%;border-radius:4px;padding:14.5px 20px 14px 20px;" >Login</button>
  </div>
 <center>
 <div id="id01" class="modal">
@@ -381,4 +381,10 @@ window.onclick = function(event) {
     }
 }
 </script>
+<script>
+function pageRedirect() {
+    window.location.href="file:///C:/Users/simran/Desktop/delivery/delivery/decut/templates/de-login.html";
+
+	}
+	</script>
 </html>

@@ -104,28 +104,29 @@ span{
 		text-decoration:none;
 	    margin-bottom:-48px;
 	    }	
-#estimate{   font-size:25px;
+#estimate{   font-size:20px;
 			 text-align:right;
 			 font-family:Courier New;
-			 margin-right:167px;
-	   margin-top:180px;
-	   margin-bottom:-2px;
+			 
+	  margin-right: 95px;
+margin-top: 200px;
+	   
 		 }
 #datepicker{
         border-radius:7px;
 		width:65%;
 		float:right;
-		padding:15px;
-		margin-top:-14px;
+		padding:9px;
+		margin-top:-30px;
 		margin-right:105px;
 		}
 .checktext{
         float:right;
-		padding:15px;
-		margin-top:-1px;
-	    margin-right:222px;
+		padding:9px;
+		margin-top:-16px;
+	    margin-right:240px;
 		font-family: Courier New;
-		font-size:14px;
+		font-size:15px;
 			}
 .checkbutton{
         cursor: pointer;
@@ -150,22 +151,8 @@ span{
 		align:center;		
 				
 				}
-.model{
-	    font-color:white;
-	    position: relative; /* Stay in place */
-		z-index:1; /* Sit on top */
-		left: -50px;
-		top: 90px;
-		width: 100%; /* Full width */
-		height: 290px; /* Full height */
-		background-color: rgb(23, 22, 43); /* Fallback color */
-		background-color: rgb (0, 0, 4, 0.5); /* Black w/ opacity */
-		padding-top: 30px;
-		margin-bottom:40%;
-		margin-right:130px;
 
 	
-	}
 .thought{
 	    color:white;
 		font-size:35px;
@@ -173,11 +160,11 @@ span{
 		font-family:'Dancing Script', cursive;
 		
 		}
-.city{      margin-top:-190px;
-			 font-size:25px;
+.city{      margin-top:-175px;
+			 font-size:21px;
 			 text-align:right;
 			 font-family:Courier New;
-			 margin-right:325px;		
+			 margin-right:333px;		
 				}
 .col-75 {
 	margin-left:10%;
@@ -185,10 +172,11 @@ span{
     width: 85%;
     margin-top: -248px;}
 #country{
-border-radius:7px;
+	margin-bottom:-5px;
+	border-radius:7px;
 	width:77%;
-	padding:15px;
-		}
+	padding:9px;
+	margin-top:70px;	}
  button
         {
 		background-color: #4CAF50;
@@ -206,7 +194,54 @@ border-radius:7px;
         {
 		opacity:0.9;
 		}
+.sidebar{
+        font-color:white;
+	    position: relative; /* Stay in place */
+		z-index:1; /* Sit on top */
+		left:-70px;
+		top: 195px;
+		width:60%; /* Full width */
+		height: 540px; /* Full height */
+		background-color: rgb(23, 22, 43); /* Fallback color */
+		background-color: rgba(0, 0, 4, 0.7); /* Black w/ opacity */
+		padding-top: 30px;
+		bottom:30px;
+		
+		}
+		
+.sideheader{
+         background-color:white;
+		 opacity:0.65;
+		 color:black;
+		 font-size: 14px;
+		 font-family:Comic Sans MS;	
+		 padding:6px  46px 17px ;
+		margin-top:-28px;
+		
+			}
+.sidetext{
+        color:white;
+		padding-right: 15px;	}
+.sidetext3{
+         paddin:2px;
+		 margin-top:-10px;	}			
 
+ li.sidetext {  font-size: 18px;
+    font-family: Comic Sans MS;
+    color: white;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+div.ex3 {
+   
+    margin-top:20px;
+    height: 490px;
+    overflow: auto;
+}
+
+
+
+		
 /*bootstrap....... */	
  @media screen and (max-width: 1300px) {
 		 
@@ -356,19 +391,11 @@ It is the largest Internet-based retailer in the world by total sales and market
 </div>
 </div>
 
-	<div class="col-sm-4" >
-
-<div class="model">
-<p class="thought">"The secret to success is to treat all customers as if your world revolves around them. " </p>
-</div>
-</div>
-
-
     <div class="col-sm-4" >
 
-<p id="estimate"> Estimated Date </p><br>
-<input type="text" id="datepicker" placeholder="enter the date"z><br><p class="checktext">Check Availability</p><br>
-<button class="checkbutton">Check</button>
+<p id="estimate"> Packets going to deliver</p><br>
+<input type="number" id="datepicker" placeholder="enter parcels" min="1" max="100"><br><p class="checktext">Add to your bag</p><br>
+<button class="checkbutton">Go</button>
 <div class="city">
 <p >City</p></div>
 <div class="col-75">
@@ -380,6 +407,19 @@ It is the largest Internet-based retailer in the world by total sales and market
       </div>
 
 </div>
+
+<div class="col-sm-4" ><div class="ex3">
+		<div class="sidebar" style="margin-left:56%;margin-top:-39.5%;">
+		<header class="sideheader">Terms & Conditions</header>
+		<ol class="sidetext"><li># For one time per delivery company can handle 100 products (limit)</li><br><br>
+		<li>#After crossing 100 products limit with respect to one company you can go for another company too.</li><br><br>
+		<li>#Per company charging for one product may vary every new time</li>
+		</ol>
+		
+                         </div>
+		</div>
+  
+</div>
 </div>
 </div>
 <div class="footer">
@@ -389,11 +429,7 @@ It is the largest Internet-based retailer in the world by total sales and market
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script>
-  $(document).ready(function() {
-    $("#datepicker").datepicker();
-  });
- </script>
+
  <script>
 function pageRedirect() {
     window.location.href="file:///C:/Users/simran/Desktop/delivery/delivery/decut/templates/aboutpage.html";
