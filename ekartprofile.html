@@ -56,9 +56,10 @@ hr{
    }
   .amazon{
 		width:30%;
-	    margin-bottom:0px;
-	    margin-top:55px;
-		margin-left:5px;
+	    margin-bottom:0px
+	
+	    margin-top:75px;
+		margin-left:14px;
 		font-size:50px;
 		color:black;
 		font-family:Courier New;
@@ -67,12 +68,12 @@ hr{
 .content{
     font-size:15px;
     background-color: white;
-	opacity:0.4;
+	opacity:0.9;
 	margin-top:14px;
 	color:rgb(60, 60, 60);
     width: 256px;
 	height: 350px;
-    border: 5px solid orange;
+    border: 5px solid #2e8b57 ;
     padding: 15px;
     margin: 50px;
     margin-left:30px;
@@ -88,8 +89,8 @@ span{
     bottom: 1px;;
     width: 100%;
 	height: 50px;
-    background-color:orange;
-	opacity:0.7;
+    background-color:#2e8b57 ;
+	opacity:0.9;
     color: white;
     text-align: center;
 }
@@ -106,33 +107,49 @@ span{
 	    }	
 #estimate{   font-size:20px;
 			 text-align:right;
-			 font-family:Courier New;
-			 
-	  margin-right: 95px;
-margin-top: 200px;
+			 font-family:Courier New; 
+			 margin-right: 95px;
+             margin-top: 200px;
 	   
 		 }
 #datepicker{
         border-radius:7px;
 		width:65%;
 		float:right;
-		padding:9px;
-		margin-top:-30px;
+		padding:3px;
+		margin-top:-60px;
 		margin-right:105px;
-		}
+		margin-bottom:-5px;}
 .checktext{
         float:right;
 		padding:9px;
-		margin-top:-16px;
+		margin-top:10px;
 	    margin-right:240px;
 		font-family: Courier New;
 		font-size:15px;
 			}
+			
+#estimate1{   font-size:20px;
+			 text-align:right;
+			 font-family:Courier New;
+			 margin-left:46px;
+	   margin-top:-150px;
+	   margin-bottom:-10px;
+		 }
+#datepicker1{
+        border-radius:7px;
+		width:65%;
+		float:right;
+		padding:3px;
+		margin-top:-80px;
+		margin-right:105px;
+		}			
+
 .checkbutton{
         cursor: pointer;
         float:right;
-		padding:10px;
-		margin-top:-3%;
+		padding:7px;
+		margin-top:-12%;
 	    margin-right:68%;
 		font-family: Courier New;
 		font-size:14px;
@@ -160,7 +177,7 @@ margin-top: 200px;
 		font-family:'Dancing Script', cursive;
 		
 		}
-.city{      margin-top:-175px;
+.city{      margin-top:-232px;
 			 font-size:21px;
 			 text-align:right;
 			 font-family:Courier New;
@@ -170,15 +187,16 @@ margin-top: 200px;
 	margin-left:10%;
     float: left;
     width: 85%;
-    margin-top: -248px;}
+    margin-top: -230px;}
 #country{
+
 	margin-bottom:-5px;
 	border-radius:7px;
 	width:77%;
-	padding:9px;
-	margin-top:70px;	}
- button
-        {
+	padding:3px;
+	margin-top:-80px;	}
+ 
+ button       {
 		background-color: #4CAF50;
 		color: white;
 		padding: 12px 12px;
@@ -186,7 +204,7 @@ margin-top: 200px;
 		cursor: pointer;
 		width: 70px;
 		float:right;
-		margin-top:-43px;
+		margin-top:-46px;
 		margin-right: 17px;
 		border-radius:2px;
 		}
@@ -233,11 +251,12 @@ margin-top: 200px;
     margin-right: 20px;
 }
 div.ex3 {
-   
-    margin-top:20px;
+   margin-top:40px;
+margin-left:20px;
     height: 490px;
     overflow: auto;
-}
+  position:fixed;
+	}
 
 
 
@@ -379,14 +398,13 @@ div.ex3 {
    
 <div>
 <div>
-<p class="amazon" ><a class="amazon" style=" text-decoration:none;" href="https://www.amazon.com/"> Amazon</a></p>
+<p class="amazon" ><a class="amazon" style=" text-decoration:none;" href="https://www.amazon.com/"> E-Kart</a></p>
 <a style="text-decoration:none; font-family:Courier New; color:black; "></a>
 </div><br>
 <p id="details"> Details</p>
 <div class="content">
-Username	&nbsp;&nbsp;	 :Amazon <br>
-About&nbsp;	:Amazon.com, Inc., doing business as Amazon,is an American electronic commerce and cloud computing company that was founded on July 5, 1994, by Jeff Bezos and is based in Seattle, Washington.
-It is the largest Internet-based retailer in the world by total sales and market capitalization.
+Username	&nbsp;&nbsp;	 :E-Kart <br>
+About&nbsp;	:Ekart logistics or Ekart courier is an Indian courier delivery services company, headquartered in Bangalore, Karnataka. A subsidiary of electronic commerce company Flipkart Pvt. Ltd., it is run by Instakart services Pvt. Ltd. 
 </div>
 </div>
 </div>
@@ -394,7 +412,10 @@ It is the largest Internet-based retailer in the world by total sales and market
     <div class="col-sm-4" >
 
 <p id="estimate"> Packets going to deliver</p><br>
+<text id="estimate1" > Estimated Date </text><br>
 <input type="number" id="datepicker" placeholder="enter parcels" min="1" max="100"><br><p class="checktext">Add to your bag</p><br>
+
+<input type="date" id="datepicker1" placeholder="enter the date" min="2018-11-18" max="2022-12-30"><br><p class="checktext"></p><br>
 <button class="checkbutton">Go</button>
 <div class="city">
 <p >City</p></div>
@@ -429,7 +450,11 @@ It is the largest Internet-based retailer in the world by total sales and market
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
+<script>
+  $(document).ready(function() {
+    $("#datepicker1").datepicker();
+  });
+ </script>
  <script>
 function pageRedirect() {
     window.location.href="file:///C:/Users/simran/Desktop/delivery/delivery/decut/templates/aboutpage.html";
