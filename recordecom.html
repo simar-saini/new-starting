@@ -103,28 +103,35 @@ hr {
    margin-left:-0px;
 			}
 	.sidebar{
-	top: 560px;
-    left:-450px;
-	font-color:white;
+		border-radius:5px;
+		top: 292px;
+		left:-369px;
+		font-color:white;
 	    position: relative; /* Stay in place */
 		z-index:0; /* Sit on top */
-		width:56%; /* Full width */
+		width:90%; /* Full width */
 		height: 565px; /* Full height */
 		background-color: rgb(23, 22, 43); /* Fallback color */
-		background-color: rgba(0, 0, 4, 0.7); /* Black w/ opacity */
+		
 		padding-top: 30px;
 		bottom:30px;
-		}
+		padding-right: 50px;
+		padding-left:15px;
+		border-radius:10px;}
 		
 .sideheader{
-         background-color:white;
-		 opacity:0.65;
-		 color:black;
+         background-color: rgb(23, 22, 43); /* Fallback color */
+		background-color: rgba(0, 0, 4, 0.5);
+		 color:white;
 		 font-size: 14.5px;
 		 font-family:Comic Sans MS;	
-		 padding:11px 40px;
-		margin-top:-18px;	
-			}
+		margin-right:19%;
+		margin-left:28.4%;	
+		padding:10px;
+margin-top:30px;
+margin-bottom:-40px;	
+
+	}
 .sidetext{
         color:white;
 			}
@@ -137,7 +144,20 @@ hr {
     color: white;
     margin-left: 60px;
     margin-right: 20px;
-}		
+    
+	}
+li	{
+    text-align:justify;
+			}
+div.ex3 {
+   overflow-x:hidden;
+   margin-top:40px;
+   margin-left:310px;
+   height: 450px;
+   overflow: auto;
+   position:fixed;
+	}
+	
 </style>
 </head>
 <body>
@@ -147,13 +167,18 @@ hr {
  <button  onclick="pageRedirect()" style="width:auto;">Login</button>
  </div>
 <center>
-<div class="sidebar" style="margin-left:56%;margin-top:-39.5%;">
 <header class="sideheader">Terms & Conditions</header>
+<div class="ex3">
+<div class="sidebar" style="margin-left:56%;margin-top:-39.5%;">
+
+
 <ol class="sidetext"><li># For one time per delivery company can handle 100 products (limit)</li><br><br>
 <li>#After crossing 100 products limit with respect to one company you can go for another company too.</li><br><br>
 <li>#Per company charging for one product may vary every new time</li>
 </ol>
 </div>
+</div>
+
    
 </center>
 </body>
